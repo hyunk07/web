@@ -1,0 +1,53 @@
+@charset 'utf-8';
+
+:root {
+  --ff-Mont: "Montserrat", sans-serif;
+  --ff-Play: "Playfair Display", sans-serif;
+  --main-color: #f05566;
+}
+
+body {
+  font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+}
+svg {
+  width: 50px;
+}
+.block-line {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+/* more 버튼 */
+.more-btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 15px 40px;
+  border-radius: 50px;
+  background-color: #0d50aa;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.8s;
+}
+.more-btn:hover {
+  background-color: #000;
+}
+.pink {
+  color: var(--main-color);
+}
+
+/* list 버튼 */
+.cicle-btn ul li a {
+  display: inline-block;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  text-indent: -999999999px;
+  height: 16px;
+  width: 16px;
+}
+.cicle-btn ul li a.active {
+  border: 3px solid var(--main-color);
+}
